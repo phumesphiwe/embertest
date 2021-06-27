@@ -24,9 +24,14 @@
         </p>
 
         {{!-- Place the component to archive/unarchive users here --}}
-        <button class="button mb-2" type="button">
-          Check User Status
-        </button>
+        {{#if hasAchived}}
+          <h1 style="color:white;">The user has been archived :)</h1>
+          <button class="button mb-2" type="button" {{action 'userNotArchived'}}>Unarchive The User</button>
+        {{else}}
+        <h1 style="color:white;">The user is unarchive :(</h1>
+        <button class="button mb-2" type="button" {{action 'userAchive'}}>Archive The User</button>
+        {{/if}}
+
       </div>
     </div>
   </div>
