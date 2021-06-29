@@ -28,4 +28,4 @@ You will need the following things properly installed on your computer.
 
 Push your work to your own local git repository. (Change the origin to link to your own git repository.)
 
-* git remote set-url origin http://github.com/your_username/your_repository
+* git remote add origin https://github.com/phumesphiwe/embertest.git
